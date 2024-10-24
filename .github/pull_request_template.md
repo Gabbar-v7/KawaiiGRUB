@@ -8,13 +8,13 @@
 
 ## Key Changes
 
-1. **Category 1:**
+1. **Category:**
 
-- Points
+-
 
-2. **Category 2:**
+2. **Category:**
 
-- Points
+-
 
 ## Additional Updates
 
