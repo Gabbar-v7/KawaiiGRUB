@@ -30,7 +30,7 @@ terminal-border: "0"
   top = 41%
   width = 40%
   height = 65%
-  item_font = "DIN 2014 Regular 23"
+  item_font = "Public Sans Bold 21"
   item_color = "#cccccc"
   selected_item_color = "#ffffff"
   icon_width = 75
