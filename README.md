@@ -2,11 +2,13 @@
 
 This theme brings a touch of elegance and charm to your GRUB bootloader with vibrant colors, clean design, and a kawaii-inspired aesthetic.
 
-<img src="assets/screenshot.png" width=250px align="center" alt="Kawaii GRUB Theme">
+<div align="center">
+<img src="assets/screenshot.jpg" alt="Kawaii GRUB Theme">
+</div>
 
 ## Features
 
-- **Bold Fonts**: Uses unique fonts to enhance the theme's visual appeal.
+- **Bold Fonts**: Uses unique bold fonts to enhance the theme's visual appeal.
 - **Minimalistic Design**: Focuses on simplicity with a kawaii-inspired aesthetic.
 - **Easy to Install**: Follow the installation steps to quickly apply the theme to your GRUB.
 - **High Customizability**: Modify colors, fonts, and more to make it your own.
