@@ -58,7 +58,7 @@ This theme brings a touch of elegance and charm to your GRUB bootloader with vib
 6. **Reboot**:
    Restart your system to see the new theme in action!
 
-### Changing Fonts
+## Changing Fonts
 
 1. Locate the `theme.txt` file inside the theme directory.
 2. Change the `item_font` parameter to use your preferred font file, e.g., `item_font = "roboto_bold_25.pf2"`.
