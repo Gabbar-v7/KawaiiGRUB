@@ -1,32 +1,29 @@
-## Description
+## Description  
+<!-- Describe your changes in detail.   -->
 
-<!-- A clear and concise description of the updates and optimizations included in this pull request. -->
+## Related Issue  
+<!-- If applicable, mention the issue this pull request resolves (e.g., Fixes #123).   -->
 
-## Related Issues
-
-<!-- Link any related issues. Example: - Fixes #123 -->
+## Type of Change  
+- [ ] Bug fix  
+- [ ] New feature  
+- [ ] Enhancement  
+- [ ] Documentation  
 
 ## Key Changes
 
 1. **Category:**
 
--
+ -
 
 2. **Category:**
 
--
+ -
 
-## Additional Updates
+## Checklist  
+- [ ] I have tested the changes locally.  
+- [ ] I have updated documentation (if necessary).  
+- [ ] I have followed the project’s contribution guidelines.  
 
--
--
-
-## Testing
-
-- <!-- e.g. Fully tested across Android platforms. -->
-- <!-- e.g. Notifications function as expected with correct navigation. -->
-- <!-- e.g. Required permissions for notifications must be granted. -->
-
----
-
-<!-- Extra -->
+## Additional Notes  
+<!-- Add any additional information about the pull request.   -->
