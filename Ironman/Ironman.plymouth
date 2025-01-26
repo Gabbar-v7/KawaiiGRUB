@@ -1,0 +1,9 @@
+[Plymouth Theme]
+Name=Ironman-Boot
+Description=Ironman Bootanimation For Plymouth
+Comment=made by Vivek Rajan
+ModuleName=script
+
+[script]
+ImageDir=/usr/share/plymouth/themes/Ironman
+ScriptFile=/usr/share/plymouth/themes/Ironman/Ironman.script

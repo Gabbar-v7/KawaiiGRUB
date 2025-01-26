@@ -47,7 +47,7 @@ terminal-border: "0"
 # You can change the name of default starting OS here
 + label {
   left = 7%
-  top = 78%
+  top = 88%
   align = "left"
   id = "__timeout__"
   text = "Booting selected OS in %d..."
