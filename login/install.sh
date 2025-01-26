@@ -33,8 +33,8 @@ if [[ ! -d "$LIGHTDM_BACKGROUND_DIR" ]]; then
 fi
 
 # Move the image to the LightDM directory
-echo "Moving image to LightDM directory..."
-sudo mv "$IMAGE_NAME" "$IMAGE_DEST"
+echo "coping image to LightDM directory..."
+sudo cp "$IMAGE_NAME" "$IMAGE_DEST"
 
 # Check if LightDM configuration file exists
 if [[ ! -f "$LIGHTDM_CONF" ]]; then
@@ -65,7 +65,7 @@ fi
 
 # Replace the gtk.css file in the Kali-Dark theme folder with the custom one
 echo "Replacing the GTK CSS file in the Kali-Dark theme folder..."
-sudo mv "$GTK_CSS_FILE" "$GTK_CSS_DEST"
+sudo cp "$GTK_CSS_FILE" "$GTK_CSS_DEST"
 
 # Restart LightDM to apply changes
 echo "Restarting LightDM to apply changes..."
