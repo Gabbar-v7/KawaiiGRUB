@@ -12,7 +12,7 @@ NC='\033[0m' # No Color
 
 # Banner
 echo -e "${CYAN}############################################################"
-echo -e "${GREEN}###                HACKER THEME INSTALLER                ###"
+echo -e "${GREEN}###              SPLASHIFY THEME INSTALLER              ###"
 echo -e "${CYAN}############################################################"
 echo -e "${WHITE}        Setting up LightDM, GRUB, and Plymouth themes...      "
 echo -e "${CYAN}############################################################"
