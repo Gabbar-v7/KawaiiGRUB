@@ -20,7 +20,15 @@ echo -e "${CYAN}############################################################"
 
 # Variables
 LIGHTDM_CONF="/etc/lightdm/lightdm-gtk-greeter.conf"
-IMAGE_NAME="background.png" # Update if your image name is different
+read -p "Enter the background image file name: " IMAGE_NAME
+
+# Check if the file exists
+if [[ ! -f "login/$IMAGE_NAME" ]]; then
+    echo "Error: File does not exist. Using Default image."
+    IMAGE_NAME="background.png" # Update if your image name is different
+fi
+
+echo "Using background image: $IMAGE_NAME"
 GTK_CSS_FILE="gtk-dark.css" # Update if your custom file name is different
 LIGHTDM_BACKGROUND_DIR="/usr/share/backgrounds"
 IMAGE_DEST="$LIGHTDM_BACKGROUND_DIR/$IMAGE_NAME"
