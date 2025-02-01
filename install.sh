@@ -67,7 +67,7 @@ echo "Updating LightDM configuration..."
 sudo sed -i "/^background=/c\background=$IMAGE_DEST" "$LIGHTDM_CONF"
 
 # If no background line exists, append it
-if ! grep -q "^background=" "$LIGHTDM_CONF"; then
+if ! grep -q "^background" "$LIGHTDM_CONF"; then
   echo "background=$IMAGE_DEST" | sudo tee -a "$LIGHTDM_CONF" > /dev/null
 fi
 
