@@ -20,7 +20,7 @@ echo -e "${CYAN}############################################################"
 
 # Variables
 LIGHTDM_CONF="/etc/lightdm/lightdm-gtk-greeter.conf"
-read -p "Enter the background image file name: " IMAGE_NAME
+read -p "Enter the background image file name present in login folder: " IMAGE_NAME
 
 # Check if the file exists
 if [[ ! -f "login/$IMAGE_NAME" ]]; then
