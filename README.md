@@ -48,7 +48,7 @@ Once the script finishes, restart your system and enjoy your newly customized lo
 ## How Does It Work?
 
 - **LightDM**: 
-   The script checks if the background image exists and moves it to the correct directory. Then, it updates the LightDM configuration file to point to the new background.
+   The script checks if the background image exists and moves it to the correct directory. Then, it updates the LightDM configuration file to point to the new background. Save new background images in login folder.
    
 - **GRUB**: 
    It checks if a GRUB theme folder is present and installs it to `/boot/grub/themes/`. The script also modifies the `grub` configuration to point to your new theme and adds splash options.
