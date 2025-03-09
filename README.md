@@ -21,6 +21,7 @@ This theme brings a touch of elegance and charm to your GRUB bootloader with vib
 - A basic understanding of the Linux terminal.
 
 1. **Clone the Repository**:
+
    ```bash
    git clone https://github.com/Gabbar-v7/KawaiiGRUB.git
    ```
@@ -31,28 +32,59 @@ This theme brings a touch of elegance and charm to your GRUB bootloader with vib
    ```
 
 ### Install Via Script
+
 3. **Run install.sh**:
    ```bash
    ./install.sh
    ```
 
-### Or Manually 
+### Manual Installation
+
+#### For Debian-based Systems (e.g., Ubuntu, Debian)
 
 3. **Copy the Theme to GRUB's Themes Directory**:
+
    ```bash
    sudo cp -r kawaii-grub-theme /boot/grub/themes/
    ```
 
 4. **Set the Theme in GRUB Configuration**:
    Open your GRUB configuration file (usually located at `/etc/default/grub`) and add the following line:
+
    ```plaintext
    GRUB_THEME="/boot/grub/themes/kawaii-grub-theme/theme.txt"
    ```
 
 5. **Update GRUB**:
    Apply the changes by updating GRUB.
+
    ```bash
    sudo update-grub
+   ```
+
+6. **Reboot**:
+   Restart your system to see the new theme in action!
+
+#### For Arch-based Systems (e.g., Arch Linux, Manjaro)
+
+3. **Copy the Theme to GRUB's Themes Directory**:
+
+   ```bash
+   sudo cp -r kawaii-grub-theme /boot/grub/themes/
+   ```
+
+4. **Set the Theme in GRUB Configuration**:
+   Open your GRUB configuration file (usually located at `/etc/default/grub`) and add the following line:
+
+   ```plaintext
+   GRUB_THEME="/boot/grub/themes/kawaii-grub-theme/theme.txt"
+   ```
+
+5. **Update GRUB**:
+   Apply the changes by updating GRUB.
+
+   ```bash
+   sudo grub-mkconfig -o /boot/grub/grub.cfg
    ```
 
 6. **Reboot**:
@@ -73,12 +105,34 @@ To customize the theme, open the `theme.txt` file in the theme directory. Here, 
 
 ## Troubleshooting
 
-- If you encounter issues during boot, ensure that the paths in `GRUB_THEME` and other settings are correct.
-- Use `grub-mkfont` to convert TTF/OTF fonts to `.pf2` format if you wish to add custom fonts:
+### General Issues
+
+- **Incorrect Paths**: If you encounter issues during boot, ensure that the paths in `GRUB_THEME` and other settings are correct. Double-check the location of the theme directory and the `theme.txt` file.
+- **Custom Fonts**: If you want to use custom fonts, ensure they are in the correct `.pf2` format. Use `grub-mkfont` to convert TTF/OTF fonts:
   ```bash
   grub-mkfont -s 25 -o custom_font_25.pf2 font.ttf
   ```
-- Issues with applying fonts may arise due to secure boot, try turning it off in the BIOS.
+- **Secure Boot**: Issues with applying fonts or themes may arise due to Secure Boot. Try disabling Secure Boot in your BIOS/UEFI settings.
+
+### Debian-based Systems
+
+- **GRUB Update Fails**: If `sudo update-grub` fails, ensure that the `GRUB_THEME` path is correct and that the theme files are properly copied to `/boot/grub/themes/`.
+- **Missing GRUB Directory**: If the `/boot/grub/themes/` directory does not exist, create it manually:
+  ```bash
+  sudo mkdir -p /boot/grub/themes/
+  ```
+
+### Arch-based Systems
+
+- **GRUB Configuration Not Applied**: If the theme does not appear after updating GRUB, ensure that the `GRUB_THEME` line is correctly added to `/etc/default/grub` and that the `grub-mkconfig` command is executed successfully.
+- **Missing GRUB Directory**: If the `/boot/grub/themes/` directory does not exist, create it manually:
+  ```bash
+  sudo mkdir -p /boot/grub/themes/
+  ```
+- **GRUB Installation**: Ensure GRUB is properly installed on your system. If not, install it using:
+  ```bash
+  sudo pacman -S grub
+  ```
 
 ## Contributing
 
