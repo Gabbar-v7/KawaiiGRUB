@@ -28,7 +28,7 @@ This theme brings a touch of elegance and charm to your GRUB bootloader with vib
 
 2. **Navigate to the Theme Directory**:
    ```bash
-   cd KawaiiGRUB/kawaii-grub-theme
+   cd KawaiiGRUB
    ```
 
 ### Install Via Script
