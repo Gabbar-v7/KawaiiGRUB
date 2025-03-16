@@ -26,7 +26,7 @@ This theme brings a touch of elegance and charm to your GRUB bootloader with vib
    git clone https://github.com/Gabbar-v7/KawaiiGRUB.git
    ```
 
-2. **Navigate to the Theme Directory**:
+2. **Navigate to the Directory**:
    ```bash
    cd KawaiiGRUB
    ```
